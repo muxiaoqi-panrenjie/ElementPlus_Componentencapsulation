@@ -1,9 +1,14 @@
 import { createRouter, RouteRecordRaw ,createWebHistory} from 'vue-router'
-import Container from "@/components/container/index.vue"
+import Home from "@/views/Home.vue"
+import Menu from "@/views/menu/menu.vue"
 const routes:RouteRecordRaw[] = [
     {
         path:'/',
-        component:Container,
+        component:Home,
+    },
+    {
+        path:'/menu',
+        component:Menu
     }
 ]
 const router = createRouter({
