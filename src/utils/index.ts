@@ -5,8 +5,8 @@ interface IFuntion {
 }
 
 // 把驼峰转换成横岗
-export const toLine = (value:string) => {   
-    return value.replace(/(A-Z)g/, '$1').toLocaleLowerCase()
+export const toLine = (value:string) => { 
+    return value.replace(/(A-Z)g/, '$1' ).toLocaleLowerCase()
 }
 // 防抖  用户多次操作已最后一次为准
 export const debounce =  ( fn: Function , delay: number = 300 ): any => {

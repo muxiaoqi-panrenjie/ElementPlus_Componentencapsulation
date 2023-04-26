@@ -5,7 +5,7 @@
       class="el-menu-vertical-demo"
       :router="router"
       v-bind="$attrs" >
-      <template v-for="(item, index) in data" :key="index">
+      <template v-for="item in data" :key="index">
         <el-menu-item v-if="!item[children] || !item[children].length" :index="item[index]">
           <component v-if="item[icon]" :is="`el-icon-${toLine(item[icon])}`"></component>
           <span>{{ item[name] }}</span>
@@ -13,7 +13,7 @@
         <el-sub-menu v-if="item[children] && item[children].length" :index="item[index]">
           <template #title>
             <component v-if="item[icon]" :is="`el-icon-${toLine(item[icon])}`"></component>
-            <span>{{ item[name] }}</span>
+            <span>{{ item[name] }}</span> 
           </template>
           <el-menu-item v-for="(item1, index1) in item[children]" :key="index1" :index="item1.index">
             <component v-if="item1[icon]" :is="`el-icon-${toLine(item1[icon])}`"></component>

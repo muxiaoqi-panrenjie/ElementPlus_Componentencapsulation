@@ -1,11 +1,10 @@
 <template>
     <div style="display: flex;">
       <div style="flex:1;">
-        22
-        <m-menu :data="data1" defaultActive="1" name="a" index="b" icon="c" children="d"></m-menu>
+        <m-menu :data="data1" defaultActive="2" name="a" index="b" icon="c" children="d"></m-menu>
       </div>
       <div style="flex:1;">
-        <!-- <m-infinite-menu :data="data2" defaultActive="2" name="a" index="b" icon="c" children="d"></m-infinite-menu> -->
+        <m-infinite-menu :data="data2" defaultActive="2" name="a" index="b" icon="c" children="d"></m-infinite-menu>
       </div>
     </div>
   </template>
